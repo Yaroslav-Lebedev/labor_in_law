@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- base meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <meta name="author" content="">
+    <!-- disable link highlighting upon tap-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- theme Color for Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000616">
+    <meta name="description" content="Ролевая игра «Labor in Law» – это имитация внеплановой проверки Государственной службы по вопросам труда по выявлению неформальных трудовых отношений и неофициальной выплаты заработной платы">
+    <meta name="keywords" content="">
+    <meta property="og:description" content="Тренинг ориентированный на обучение сотрудников компании грамотной коммуникации с инспектором Гоструда для минимизации рисков наложения штрафных санкций">
+    <meta property="og:image" content="https://ovcharov.academy/img/fb_img_1.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <meta property="og:site_name" content="www.tb.ovcharov.academy">
+    <meta property="og:title" content="Ролевая игра «Labor in Law»>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tb.ovcharov.academy">
+    <!-- title-->
+    <title>Ролевая игра «Labor in Law»</title>
+    <!-- favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- css-->
+    <link rel="stylesheet" href="css/main.min.css?21240c10a0">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NVL2HST');
+    </script>
+    <!-- End Google Tag Manager-->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript)noscript
+    -->
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVL2HST" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <!-- End Google Tag Manager (noscript)-->
+    <div class="modal">
+      <!-- modal wrapper-->
+      <div class="modal__wrapper">
+        <!-- close modal-->
+        <div class="close-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+                <path fill-rule="evenodd" fill="rgb(219, 217, 218)" d="M17.994,16.066 L16.067,17.993 L9.000,10.927 L1.933,17.993 L0.006,16.066 L7.073,8.999 L0.006,1.933 L1.933,0.006 L9.000,7.072 L16.067,0.006 L17.994,1.933 L10.927,8.999 L17.994,16.066 Z"></path>
+              </svg>
+        </div>
+        <!-- modal title-->
+        <div class="modal__title">
+          <p>Принять участие</p>
+          <p>оставьте ваш номер телефона и мы перезвоним вам в ближайшее время</p>
+        </div>
+        <!-- contact block form-->
+        <!--form#tel.form-contact(action='/php/data-tel.php', method='post')-->
+        <form class="form-contact" action="php/data-contact.php" method="post">
+          <div class="form-group">
+            <input class="form-control" maxlength="50" name="phone" placeholder="телефон*" required="" type="tel">
+          </div>
+          <div class="form-group">
+            <button class="btn" type="submit">Перезвоните мне</button>
+          </div>
+        </form>
+      </div>
+      <!-- modal error wrapper-->
+      <div class="modal-error__wrapper">
+        <!-- close modal-->
+        <div class="close-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+                <path fill-rule="evenodd" fill="rgb(219, 217, 218)" d="M17.994,16.066 L16.067,17.993 L9.000,10.927 L1.933,17.993 L0.006,16.066 L7.073,8.999 L0.006,1.933 L1.933,0.006 L9.000,7.072 L16.067,0.006 L17.994,1.933 L10.927,8.999 L17.994,16.066 Z"></path>
+              </svg>
+        </div>
+        <!-- modal title-->
+        <div class="modal-error__title">
+          <p>:(</p>
+          <p>Не удалось отправить данные, попробуйте еще раз или перезвоните нам по номеру</p>
+          <p> <a href="tel:+380444656407">+38(044)465-64-07</a></p>
+        </div>
+      </div>
+    </div>
+    <!--include components/modal-success-->
+    <header class="header">
+      <!-- container-->
+      <div class="container">
+        <!-- item-->
+        <div class="header__item">
+          <!-- nav menu -->
+          <nav class="header__nav" role="navigation">
+            <!-- item menu-->
+            <ul class="header__nav-list">
+              <li class="header__nav-item"> <a class="header__nav-link" href="#program" data-scroll>Программа тренинга</a></li>
+              <li class="header__nav-item">
+                <button class="header__nav-link" id="infographic">Условия</button>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#trainer" data-scroll>О тренере</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- item-->
+        <div class="header__item">
+          <!-- mobile burger-->
+          <div class="burger-menu">
+            <div class="burger-menu__item"></div>
+            <div class="burger-menu__item"></div>
+            <div class="burger-menu__item"></div>
+          </div>
+          <div class="btn-link"><span>?</span><span>Задать вопрос</span></div>
+        </div>
+      </div>
+    </header>
+    <main class="wrapper" role="main">
+      <section class="home">
+        <div class="container">
+          <div class="home__title">
+              <h1 class="h11">Геймефицированный тренинг<br><span class="author-h1">Труд в законе»</span></h1>
+            <!-- <h1><span class="autor.h1">Геймефицированный тренинг</span><br><strong>«Труд в законе»</strong></h1> -->
+            <div class="home__link"><span></span><a href="#">Принять участие</a></div>
+          </div>
+        </div>
+        <div class="home__person"></div>
+        <div class="arrow"><span class="arrow-first"></span><span class="arrow-second"></span></div>
+      </section>
+      <section class="role-game">
+        <div class="container">
+          <div class="section-wrapper">
+            <!-- item-->
+            <div class="section__item">
+              <div class="section-title">
+                <h2>О ТРЕНИНГЕ</h2>
+                <!-- <h2>Ролевая игра «Labor in Law»</h2> -->
+              </div>
+              <div class="section-text">
+                <p><mark>Ролевая игра «Labor in Law»</mark> – это имитация внеплановой проверки Государственной службы по вопросам труда по выявлению неформальных трудовых отношений и неофициальной выплаты заработной платы.</p>
+                <p><mark>В игре все как в жизни:</mark> удостоверения, направления, акты, протоколы, опрос сотрудников, видео и аудио фиксация, а в основе сценариев реальные практические примеры.</p>
+                <p><mark>Что дает игра:</mark> ты сможешь оценить уровень подготовки собственного персонала, увидеть, как проявляют себя люди в стрессовой ситуации и под давлением, определить болевые точки своего бизнеса и вместе с профессионалами провести работу над ошибками.</p>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="section__item section__item--img" data-aos="fade-left">
+              <div class="section-img-text"><span data-aos="shtamp" data-aos-offset="0">G</span><span data-aos="shtamp" data-aos-offset="0">A</span><span data-aos="shtamp" data-aos-offset="0">M</span><span data-aos="shtamp" data-aos-offset="0">E</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="training" id="program">
+        <div class="container">
+          <p class="training__program" data-aos="fade-up">Формат проведения игры</p>
+          <div class="section-wrapper">
+            <!-- item-->
+            <div class="section__item section__item--img" data-aos="fade-right">
+              <div class="section-img-text"><span data-aos="shtamp" data-aos-offset="0">S</span><span data-aos="shtamp" data-aos-offset="0">A</span><span data-aos="shtamp" data-aos-offset="0">Y</span><span data-aos="shtamp" data-aos-offset="0">H</span><span data-aos="shtamp" data-aos-offset="0">I</span></div>
+            </div>
+            <!-- item-->
+            <div class="section__item" data-aos="fade-left">
+              <div class="section-title">
+                <p> <span>01</span> Этап</p>
+                <h2>Подготовка</h2>
+              </div>
+              <div class="section-text">
+                <p>Хочешь мира - готовься к войне!<br>(латинское крылатое выражение) </p>
+                <div class="training__mark">           
+                  <div class="section-img-line" data-aos="section-img-line"></div>
+                </div>
+                <p>Рабочий день в разгаре. Офис напоминает слаженный механизм, где каждый винтик выполняет свою функцию. Процессы налажены, работа кипит, прибыль увеличивается. Ничего не предвещает беды, но… Визит нежданных гостей резко меняет ситуацию.</p>
+                <p>Секретарь растерянно всматривается в текс врученных ей документов и судорожно пытается набрать номер руководителя - занято. Тем временем инспекторы труда уже вовсю осматриваются в офисе, вступая в непринужденные беседы с персоналом.</p>
+                <p>Постепенно накатившая волна тревоги спадает, эти люди пришли с миром: без оружия, спецодежды и силовой поддержки. Все хорошо. Они вежливо общаются с сотрудниками и никому не причиняют вреда. Обойдется!..</p>
+                <p class="mark-text" data-aos="mark-text">Не нравится перспектива?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dive">
+        <div class="container">
+          <div class="section-wrapper">
+            <!-- item-->
+            <div class="section__item" data-aos="fade-right">
+              <div class="section-title">
+                <p> <span>02</span> Этап</p>
+                <h2>Погружение</h2>
+              </div>
+              <div class="section-text">
+              	<p><mark>Хочешь мира - готовься к войне!<br>(латинское крылатое выражение)</mark></p>
+                <p>Ты прибываешь в офис и первым делом пытаешься понять причину проверки, ищешь юриста и вспоминаешь все, что учил, слышал и читал о трудовом законодательстве, Гоструда, их полномочиях и размерах штрафов.</p>
+                <p>Инспекторы разделились и указывая на статьи закона, проводят выборочные беседы с работниками, сверяются с документами и делают какие-то пометки в блокнотах.</p>
+                <p>Когда-то коллективу рассказывали о трудовых проверках… Что инспекторы могут проводить опрос персонала… Но будут ли считаться те пару фраз у ксерокса или у кофемашины опросом?..</p>
+                <p>На тренинге говорили о каких моментах точно нельзя упоминать... Сориентируются ли сейчас сотрудники, они запомнили инструкции или в данный момент у них в голове каша?</p>
+                
+                <!-- <p class="mark-text" data-aos="mark-text">Квест проходит с полным</p>
+                <p class="mark-text" data-aos="mark-text">погружением в реальные условия!</p> -->
+              </div>
+            </div>
+            <!-- item-->
+            <div class="section__item section__item--img" data-aos="fade-left">
+              <div class="section-img-text"><span data-aos="shtamp" data-aos-offset="0">G</span><span data-aos="shtamp" data-aos-offset="0">A</span><span data-aos="shtamp" data-aos-offset="0">M</span><span data-aos="shtamp" data-aos-offset="0">E</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="emerge">
+        <!-- container-->
+        <div class="container">
+          <div class="section-wrapper">
+            <!-- item-->
+            <div class="section-item section-item--img" data-aos="fade-right">
+              <div class="emerge__box">
+                <div class="section-img-text"><span data-aos="shtamp" data-aos-offset="0">S</span><span data-aos="shtamp" data-aos-offset="0">T</span><span data-aos="shtamp" data-aos-offset="0">R</span><span data-aos="shtamp" data-aos-offset="0">E</span><span data-aos="shtamp" data-aos-offset="0">S</span><span data-aos="shtamp" data-aos-offset="0">S</span></div>
+                <div class="emerge__box emerge__box--one" data-aos="box--one"></div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="section-item" data-aos="fade-left">
+              <div class="section-title section-title--white">
+                <p> <span>03</span> Этап</p>
+                <h2>Выныриваем</h2>
+                <div class="emerge__mark">
+                  <div class="section-img-line" data-aos="section-img-line"></div>
+                  <p><strong>В критической ситуации ты не поднимешься до уровня своих ожиданий, а упадешь до уровня своей подготовки (Американская армейская пословица)</strong></p>
+                </div>
+              </div>
+              <div class="section-text section-text--white">
+                <p class="subtitle">Человеческий фактор трудно прогнозируемый. Неблагоприятные обстоятельства способствуют проявлению скрытых сторон характера человека.</p>
+                <p>Под влиянием стресса многие люди теряют быстроту реакций, способность к аналитическому мышлению, принятию взвешенных решений и не в силах воспользоваться имеющимися знаниями.</p>
+                <p>Критические ситуации также способствуют проявлению затаенной обиды, неудовлетворенных амбиций, зависти, желания мести или реванша… Часто проигрываются такие чувства, как страх наказания или боязнь ответственности.</p>
+                <p>Удивительно могут раскрыться с виду замкнутые и слабые люди, оказавшись крепкими орешками, а ярые защитники в доброте своих порывов порою даже вредят предприятию.</p>
+                <p><strong>Ролевая игра «Labor in Law» в условиях, максимально приближенным к реальным,</strong> позволит выявить скрытые стороны персонала, его лояльность к руководству и компании, степень надежности и порядочности, а также определить уровень правовой подготовки и психологической готовности к реальным проверкам.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="findings">
+        <!-- container-->
+        <div class="container">
+          <div class="section-wrapper">
+            <!-- item-->
+            <div class="section-item" data-aos="fade-right">
+              <div class="section-title">
+                <p> <span>04</span> Этап</p>
+                <h2>Выводы</h2>
+              </div>
+              <div class="section-text">
+              	<p><strong>Если тебе не нравиться то, что ты получаешь, измени то, что ты делаешь (Кастанеда)</strong></p>
+                <p>После окончания моделирования ситуации все действия участников будут проанализированы адвокатами с большим опытом присутствия на проверках. Они помогут разработать стратегию поведения и расскажут о различных сценариях развития событий.</p>
+                <p>А участники, что особенно важно, узнают, какие последствия повлечет их поведение в игровой проверке и в какую сумму штрафов выльются предприятию их задушевные беседы с инспекторами  в случае проведения реальной проверки.</p>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="section-item section-item--img" data-aos="fade-left">
+              <div class="section-img section-img--flexend"><img src="img/findings-img.jpg" alt="">
+                <div class="section-img-text"><span data-aos="shtamp" data-aos-offset="0">R</span><span data-aos="shtamp" data-aos-offset="0">E</span><span data-aos="shtamp" data-aos-offset="0">A</span><span data-aos="shtamp" data-aos-offset="0">L</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="epilog">
+        <!-- container-->
+        <div class="container">
+          <div class="section-wrapper">
+            <!-- item-->
+            <div class="section-item section-item--img" data-aos="fade-right">
+              <div class="section-img"><img src="img/epilog-img.jpg" alt="">
+                <div class="section-img-text"><span data-aos="shtamp" data-aos-offset="0">E</span><span data-aos="shtamp" data-aos-offset="0">A</span><span data-aos="shtamp" data-aos-offset="0">S</span><span data-aos="shtamp" data-aos-offset="0">Y</span></div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="section-item" data-aos="fade-left">
+              <div class="section-title">
+                <p> <span>05</span> Этап</p>
+                <h2>Эпилог</h2>
+              </div>
+              <div class="section-text">
+              	<p><strong>Все, что нас не убивает, делает нас сильнее! (Фридрих Ницше)</strong></p>
+                <p>ВРолевая игра «Labor in Law» ориентирована на тренировку сохранения бизнес-процесса и финансов компании, а также противостояние превышению полномочий представителями контролирующих органов.</p>
+                <p>Кроме проверки собственных сотрудников на прочность и преданность, ты получишь анализ болевых точек предприятия и юридические советы по их устранению. Сотрудники проведут роботу над собственными ошибками и получат четкий алгоритм действий на случай реальной проверки.</p>
+                <p>Практикой доказано, что взаимодействие с коллективом в экстремальных условиях повышает стрессоустойчивость каждого участника, помогает сплотить команду и увеличить ее эффективность.</p>
+                <div class="epilog__mark">
+                  <div class="section-img-line" data-aos="section-img-line"></div>
+                  <p class="mark-text" data-aos="mark-text">Готова ли твоя команда?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- team building block-->
+          <div class="team-building-block" data-aos="fade-up">
+            <!-- item-->
+            <div class="team-building-item">
+              <div class="team-building-ic team-building-ic--money">
+                <div class="glitch glitch--money"></div>
+              </div>
+              <p>
+                <mark>5 500 *</mark>гривен
+              </p>
+              <p>
+                <mark>6 000 **</mark>гривен
+              </p>
+              <p>1 участник</p>
+              <p>* до 07 июня 2019 года</p>
+              <p>** после 07 июня 2019 года</p>
+            </div>
+            <!-- item-->
+            <div class="team-building-item">
+              <div class="team-building-ic team-building-ic--group">
+                <div class="glitch glitch--group"></div>
+              </div>
+              <p>
+                <mark>16 000 *</mark>гривен
+              </p>
+              <p>
+                <mark>18 000 **</mark>гривен
+              </p>
+              <p>команда из 4 специалистов</p>
+              <p>* до 07 июня 2019 года</p>
+              <p>** после 07 июня 2019 года</p>
+            </div>
+            <!-- item-->
+            <!-- <div class="team-building-item">
+              <div class="team-building-ic team-building-ic--location">
+                <div class="glitch glitch--location"></div>
+              </div>
+              <p>
+                <mark>Где</mark>проходит
+              </p>
+              <p>Киев, Cпортивная площадь, 1А<br>«Creative Quarter» БЦ Gulliver</p>
+            </div> -->
+            <!-- item-->
+            <!-- <div class="team-building-item">
+              <div class="team-building-ic team-building-ic--date">
+                <div class="glitch glitch--date"></div>
+              </div>
+              <p>
+                <mark>Дата</mark>проведения
+              </p>
+              <p>21 июня, 2019</p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <section class="contact">
+        <!-- container-->
+        <div class="container">
+          <!-- contact block-->
+          <div class="contact-block">
+            <!-- contact block title-->
+            <div class="contact-block__title">
+              <div class="registration__header-left">
+                <div class="arrow"><span class="arrow-first"></span><span class="arrow-second"></span></div>
+              </div>
+              <div class="registration__header-right">
+                <div class="arrow"><span class="arrow-first"></span><span class="arrow-second"></span></div>
+              </div>
+              <h3 data-aos="fade-up">Оставьте свои контакты</h3>
+              <p data-aos="fade-up">и менеджер свяжется с вами для пояснения подробностей или позвоните нам по номеру<br><a href="tel:+380444656407">+38(044)465-64-07</a></p>
+            </div>
+            <!-- contact block form-->
+            <form class="form-contact" action="php/data-contact.php" method="post">
+              <div class="form-group" data-aos="fade-up">
+                <input class="form-control" maxlength="100" name="email" placeholder="email*" required="" type="email">
+              </div>
+              <div class="form-group" data-aos="fade-up">
+                <input class="form-control" maxlength="50" name="phone" placeholder="телефон" type="tel">
+              </div>
+              <div class="form-group" data-aos="fade-up">
+                <textarea class="form-control" name="comment" placeholder="ваш вопрос" type="text"></textarea>
+              </div>
+              <div class="form-group" data-aos="fade-up">
+                <button class="btn" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="trainer" id="trainer">
+        <!-- container-->
+        <div class="container">
+          <div class="section-wrapper">
+            <!-- item-->
+            <div class="section-item">
+              <div class="section-title section-title--white">
+                <h2 data-aos="fade-up">Тренеры</h2>
+                <!-- <p class="name" data-aos="fade-up">Денис Овчаров</p>
+                <p class="desc" data-aos="fade-up">Управляющий партнер Ovcharov & Partners Attorneys Association</p> -->
+              </div>
+              <div class="section-text section-text--white">
+                <!-- <p data-aos="fade-up"> <strong>Карьера</strong></p> -->
+                <p data-aos="fade-up">Начиная с 2004 года Денис работал юрисконсультом в ведущих компаниях Украины. В 2010-2012 гг. был управляющим партнером юридической фирмы «Овчаров и Партнеры». С 2012 по 2018 гг. возглавлял практику защиты бизнеса в Juscutum Attorneys Association. В команду Lavrynovych & Partners Law Firm присоединился в апреле 2018 г. и уже в начале 2019 года открыл собственное адвокатское объединение Ovcharov & Partners.</p>
+                <p data-aos="fade-up">Денис специализируется на вопросах юридической защиты в ходе уголовного преследования, расследовании внутренних хищений и мошенничества, построения системы корпоративной безопасности, а также разработки и внедрения антикоррупционной политики в компаниях.</p>
+                <p data-aos="fade-up">Вице-президент Клуба профессиональных переговорщиков, комплаенс-офицер, аккредитованный эксперт Национальной ассоциации адвокатов Украины. Признан ведущим юристом 2016 года в сфере уголовного права, а также одним из лучших адвокатов 2017 года по уголовным делам в профессиональном рейтинге «Лидеры рынка. Юридическая практика». Управляющий партнер Ovcharov & Partners.</p>
+                <!--p(data-aos='fade-up') strong Признание
+                -->
+                <!--p(data-aos='fade-up') Признан ведущим юристом 2016 года на сфере уголовного права, а также одним из лучших адвокатов 2017 года по уголовным делам в профессиональным рейтинге «Лидеры рынка. Юридическая практика»-->
+              </div>
+            </div>
+            <!-- item-->
+            <div class="section-item" data-aos="fade-left" data-aos-offset="0">
+              <div class="section-img section-img--flexend"><img src="img/man.png" alt="ovcharov"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- container-->
+      <div class="container">
+        <!-- item-->
+        <div class="footer__item">
+          <div class="rights-block">© Все права защищены, <a href="pdf/privacy_policy.pdf">Privacy policy</a><span>2019</span></div>
+        </div>
+        <!-- item-->
+        <div class="footer__item">
+          <!-- call block-->
+          <div class="call-block">
+            <p>Свяжитесь с нами:</p><a href="tel:+380444656407">+38(044)465-64-07</a>
+          </div>
+          <!-- social block-->
+          <div class="social-block"><a href="https://www.facebook.com/advocat.ovcharov" target="_blank">
+              <div class="social-block-ic social-block-ic--facebook">
+                <div class="glitch glitch--facebook"></div>
+              </div></a><a href="https://t.me/StopMasksShow" target="_blank">
+              <div class="social-block-ic social-block-ic--telegram">
+                <div class="glitch glitch--telegram"></div>
+              </div></a><a href="https://www.youtube.com/channel/UCsfyeMV6Kkz2KjGlYz_2JFw" target="_blank">
+              <div class="social-block-ic social-block-ic--youtube">
+                <div class="glitch glitch--youtube"></div>
+              </div></a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- script's-->
+    <script src="jslibs/jquery.v3.3.1.min.js"></script>
+    <script src="jslibs/aos.min.js"></script>
+    <script src="js/main.min.js?e7f0e87e4d"></script>
+  </body>
+</html>
